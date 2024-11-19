@@ -15,6 +15,7 @@ def get_excel():
 @app.post("/excel")
 def update_excel(request):
     df = pd.read_excel('data.xlsx', sheet_name='data')
+    return {'message': 'ok'}
 
 
 @app.delete("/excel")
